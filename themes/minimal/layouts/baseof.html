@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    <meta name="description" content="{{ .Site.Params.description }}">
+    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="{{ "/" | relURL }}" class="logo">{{ .Site.Title }}</a>
+                <ul class="nav-menu">
+                    {{ range .Site.Menus.main }}
+                    <li class="nav-item">
+                        <a href="{{ .URL | relURL }}" class="nav-link">{{ .Name }}</a>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        {{ block "content" . }}{{ end }}
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; {{ now.Year }} Hannah Bowley. Data scientist & institutional research professional.</p>
+            <ul class="social-links">
+                <li><a href="https://github.com/hbowley" target="_blank">GitHub</a></li>
+                <li><a href="mailto:hannah.marie.bowley@gmail.com">Email</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

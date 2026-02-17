@@ -1,0 +1,19 @@
+{{ define "content" }}
+<h1>{{ .Title }}</h1>
+
+{{ if eq .Section "projects" }}
+<div class="projects-grid">
+    {{ range .Pages.ByDate.Reverse }}
+    <div class="project-card">
+        <h3>{{ .Title }}</h3>
+        <p>{{ .Summary }}</p>
+        {{ if .Params.link }}
+        <a href="{{ .Params.link }}" class="project-link" target="_blank">View on GitHub →</a>
+        {{ end }}
+    </div>
+    {{ end }}
+</div>
+{{ else }}
+    {{ .Content }}
+{{ end }}
+{{ end }}

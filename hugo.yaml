@@ -1,0 +1,33 @@
+baseURL: "https://hbowley.github.io/"
+languageCode: "en-us"
+title: "Hannah Bowley"
+theme: "minimal"
+
+params:
+  description: "Data scientist & institutional research professional"
+  author: "Hannah Bowley"
+  
+menu:
+  main:
+    - name: "About"
+      url: "/"
+      weight: 1
+    - name: "Projects"
+      url: "/projects/"
+      weight: 2
+    - name: "Resume"
+      url: "/resume/"
+      weight: 3
+    - name: "Contact"
+      url: "mailto:hannah.marie.bowley@gmail.com"
+      weight: 4
+
+outputs:
+  home:
+    - HTML
+  section:
+    - HTML
+  taxonomy:
+    - HTML
+  term:
+    - HTML
