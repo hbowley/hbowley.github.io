@@ -1,17 +1,44 @@
 <!DOCTYPE html>
-<html lang="{{ or site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<html lang="en">
 <head>
-  {{ partial "head.html" . }}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
+    <meta name="description" content="{{ .Site.Params.description }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <header>
-    {{ partial "header.html" . }}
-  </header>
-  <main>
-    {{ block "main" . }}{{ end }}
-  </main>
-  <footer>
-    {{ partial "footer.html" . }}
-  </footer>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="/" class="logo">HB</a>
+                <ul class="nav-menu">
+                    {{ range .Site.Menus.main }}
+                    <li class="nav-item">
+                        <a href="{{ .URL }}" class="nav-link">{{ .Name }}</a>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        {{ block "main" . }}{{ end }}
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Hannah Bowley</p>
+            <ul class="social-links">
+                <li><a href="https://github.com/hbowley" target="_blank">GitHub</a></li>
+                <li><a href="https://linkedin.com/in/hannahbowley1" target="_blank">LinkedIn</a></li>
+                <li><a href="mailto:hannah.marie.bowley@gmail.com">Email</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>

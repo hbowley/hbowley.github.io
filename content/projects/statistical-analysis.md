@@ -1,9 +1,18 @@
 ---
-title: "Statistical Analysis Projects"
-date: 2023-09-01
-link: "https://github.com/hbowley?tab=repositories&q=anova"
+title: "One-Way ANOVA in Quarto"
+date: 2023-07-27
+description: "Reproducible ANOVA tutorial and analysis framework"
+link: "https://github.com/hbowley/one_way_ANOVA"
+image: "/images/projects/anova.svg"
+tags: ["R", "Statistics", "Quarto", "Teaching"]
 ---
 
-A collection of reproducible statistical analysis projects including one-way ANOVA, repeated measures ANOVA, and other hypothesis testing frameworks built with R and Quarto.
+A fully reproducible one-way ANOVA analysis built with Quarto. Serves as both a working analysis and a teaching resource for others learning hypothesis testing in R.
 
-**Tech:** R, Statistics, Quarto, tidyverse
+**What's inside:**
+- Complete ANOVA workflow (assumptions → analysis → post-hoc)
+- Clear explanations alongside code
+- Reproducible Quarto document
+- Visualization of group differences
+
+**Tech:** R, Quarto, tidyverse, Statistics

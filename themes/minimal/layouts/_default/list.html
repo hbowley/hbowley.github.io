@@ -1,19 +1,38 @@
-{{ define "content" }}
+{{ define "main" }}
 <h1>{{ .Title }}</h1>
+
+{{ .Content }}
 
 {{ if eq .Section "projects" }}
 <div class="projects-grid">
-    {{ range .Pages.ByDate.Reverse }}
+    {{ range where .Site.RegularPages "Section" "projects" }}
     <div class="project-card">
-        <h3>{{ .Title }}</h3>
-        <p>{{ .Summary }}</p>
-        {{ if .Params.link }}
-        <a href="{{ .Params.link }}" class="project-link" target="_blank">View on GitHub →</a>
+        {{ if .Params.image }}
+        <div class="project-image">
+            <img src="{{ .Params.image }}" alt="{{ .Title }}" loading="lazy" />
+        </div>
         {{ end }}
+        <div class="project-body">
+            <h3>{{ .Title }}</h3>
+            <p>{{ .Params.description | default .Summary }}</p>
+            {{ if .Params.link }}
+            <a href="{{ .Params.link }}" class="project-link" target="_blank">{{ if (strings.HasSuffix .Params.link ".pdf") }}View Poster (PDF){{ else }}View on GitHub →{{ end }}</a>
+            {{ end }}
+            {{ if .Params.github }}
+            <a href="{{ .Params.github }}" class="project-link" target="_blank">GitHub →</a>
+            {{ end }}
+        </div>
     </div>
     {{ end }}
 </div>
 {{ else }}
-    {{ .Content }}
+<div class="page-list">
+    {{ range .Pages }}
+    <article>
+        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        {{ .Summary }}
+    </article>
+    {{ end }}
+</div>
 {{ end }}
 {{ end }}

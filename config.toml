@@ -1,0 +1,44 @@
+baseURL = "https://hbowley.github.io/"
+languageCode = "en-us"
+title = "Hannah Bowley"
+theme = "minimal"
+
+[params]
+description = "Data scientist, biostatistician, and analytics consultant based in Miami"
+author = "Hannah Bowley"
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "About"
+url = "/about/"
+weight = 2
+
+[[menu.main]]
+name = "Projects"
+url = "/projects/"
+weight = 3
+
+[[menu.main]]
+name = "Publications"
+url = "/publications/"
+weight = 4
+
+[[menu.main]]
+name = "Resume"
+url = "/resume/"
+weight = 5
+
+[[menu.main]]
+name = "Contact"
+url = "/contact/"
+weight = 6
+
+[outputs]
+home = ["HTML"]
+section = ["HTML"]
+taxonomy = ["HTML"]
+term = ["HTML"]

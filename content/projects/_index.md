@@ -1,6 +1,6 @@
 ---
 title: "Projects"
-description: "A selection of my recent work and open-source contributions"
+description: "Selected work and open-source projects"
 ---
 
-Here are some of my recent projects and contributions. You can find more on my [GitHub](https://github.com/hbowley).
+A mix of research tools, statistical analyses, and data applications. Everything here is open source — check out the code on [GitHub](https://github.com/hbowley).

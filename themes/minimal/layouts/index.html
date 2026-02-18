@@ -1,34 +1,69 @@
-{{ define "content" }}
+{{ define "main" }}
 <section class="hero">
     <div class="hero-content">
+        <div class="hero-photo">
+            <img src="/images/hannah.jpg" alt="Hannah Bowley" />
+        </div>
         <h1>Hannah Bowley</h1>
-        <p class="subtitle">Data Scientist & Institutional Research Professional</p>
+        <p class="subtitle">Data Scientist · Biostatistician · Analytics Consultant</p>
         <p class="bio">
-            I'm a Director of Research & Data Analytics with a Master's in Public Health (Biostatistics). 
-            I specialize in data analysis, reproducible science, and building tools for research teams.
+            Data science and research analytics leader with expertise in statistical modeling, 
+            machine learning, and applied AI — translating complex data into actionable insights 
+            that drive strategic decision-making and measurable outcomes.
         </p>
         <div class="cta-buttons">
-            <a href="/projects/" class="btn btn-primary">View My Work</a>
-            <a href="/resume/" class="btn btn-secondary">Resume</a>
+            <a href="/projects/" class="btn btn-primary">See My Work</a>
+            <a href="/about/" class="btn btn-secondary">About Me</a>
+            <a href="/contact/" class="btn btn-secondary">Get in Touch</a>
         </div>
     </div>
 </section>
 
 <section class="highlights">
-    <h2>What I Do</h2>
+    <h2>What I Bring to the Table</h2>
     <div class="highlights-grid">
         <div class="highlight-card">
-            <h3>📊 Data Analysis</h3>
-            <p>Statistical analysis, data visualization, and reproducible research using R, Python, and SQL.</p>
+            <h3>📊 Statistical Modeling & Machine Learning</h3>
+            <p>From ANOVA to predictive ML models for student retention and course success — I design rigorous analyses in R and Python. Biostatistics training means I think carefully about assumptions, power, and real-world significance.</p>
         </div>
         <div class="highlight-card">
-            <h3>🔬 Research Tools</h3>
-            <p>Building Shiny apps and automation tools to streamline research workflows.</p>
+            <h3>🛠️ Data Engineering & Automation</h3>
+            <p>I build production pipelines — from Selenium scrapers tracking hurricane outages in real time, to agentic AI systems automating ticket triage. Less manual work, fewer errors, faster turnaround.</p>
         </div>
         <div class="highlight-card">
-            <h3>💼 Leadership</h3>
-            <p>Directing institutional research initiatives at Miami Dade College.</p>
+            <h3>📈 Analytics Leadership & Consulting</h3>
+            <p>I've led institutional analytics for one of the nation's largest colleges and built custom BI platforms for consulting clients — Shiny apps on AWS, Salesforce integrations, real-time dashboards.</p>
         </div>
+        <div class="highlight-card">
+            <h3>🔬 Reproducible Research & Cloud Deployment</h3>
+            <p>Every analysis I build is version-controlled, documented, and reproducible. I deploy to AWS, use Docker and GitHub Actions, and publish with Quarto — research that can be reviewed, rerun, and extended.</p>
+        </div>
+    </div>
+</section>
+
+<section class="tech-stack">
+    <h2>Tools & Technologies</h2>
+    <div class="tech-grid">
+        <span class="tech-tag">R</span>
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">SQL</span>
+        <span class="tech-tag">SAS</span>
+        <span class="tech-tag">Tidyverse</span>
+        <span class="tech-tag">Shiny</span>
+        <span class="tech-tag">Quarto</span>
+        <span class="tech-tag">ggplot2</span>
+        <span class="tech-tag">scikit-learn</span>
+        <span class="tech-tag">PostgreSQL</span>
+        <span class="tech-tag">SQL Server</span>
+        <span class="tech-tag">DuckDB</span>
+        <span class="tech-tag">AWS (EC2, RDS)</span>
+        <span class="tech-tag">Docker</span>
+        <span class="tech-tag">GitHub Actions</span>
+        <span class="tech-tag">Power BI</span>
+        <span class="tech-tag">REDCap</span>
+        <span class="tech-tag">Selenium</span>
+        <span class="tech-tag">Linux</span>
+        <span class="tech-tag">Bash</span>
     </div>
 </section>
 {{ end }}

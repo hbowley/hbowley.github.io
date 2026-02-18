@@ -1,8 +1,6 @@
-{{ define "content" }}
+{{ define "main" }}
 <article>
-    {{ if not (eq .Type "resume") }}
     <h1>{{ .Title }}</h1>
-    {{ end }}
     {{ .Content }}
 </article>
 {{ end }}
