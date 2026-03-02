@@ -15,7 +15,3 @@ Personal portfolio site built with Hugo.
 
 This repo deploys via GitHub Actions on push to `main`.
 
-## Notes
-
-- Keep copy direct and concise.
-- Avoid em dashes in content.
