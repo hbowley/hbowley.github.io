@@ -2,12 +2,6 @@
 
 Personal portfolio site built with Hugo.
 
-## Quick start
-
-```bash
-hugo server -D --bind 0.0.0.0 --port 8808
-```
-
 ## Edit content
 
 - Homepage: `themes/minimal/layouts/index.html`
