@@ -2,6 +2,20 @@
 title: "Resume"
 ---
 
+## Executive Snapshot
+
+Data science and analytics leader with deep experience in higher education, applied machine learning, and production BI delivery. I lead teams, build practical decision systems, and translate analytics into actions that organizations can use immediately.
+
+### Selected Impact
+
+- Managed **4 senior analysts** in institutional research and analytics
+- Supported **40+ departments and units** across a complex academic environment
+- Delivered analytics impact for a student population of **over 125,000 annually**
+- Contributed to **3 NIH funded research projects**
+- Contributed to **2 peer reviewed publications**
+
+Open to **manager, lead, and director** level roles in remote or hybrid major metro settings.
+
 ## Professional Experience
 
 ### Director, Research and Data Analytics

@@ -1,8 +1,9 @@
 ---
-title: "SRCD Conference Poster"
+title: "👁️ SRCD Conference Poster"
 date: 2023-04-19
 description: "Reproducible academic poster built entirely in R"
 link: "/SRCD.pdf"
+image: "/images/projects/srcd-poster.svg"
 github: "https://github.com/hbowley/SRCD_poster"
 tags: ["R", "posterdown", "Academic", "Reproducible Research"]
 ---

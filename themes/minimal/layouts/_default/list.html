@@ -4,23 +4,23 @@
 {{ .Content }}
 
 {{ if eq .Section "projects" }}
-<div class="projects-grid">
+<div class="projects-grid compact-projects">
     {{ range where .Site.RegularPages "Section" "projects" }}
-    <div class="project-card">
+    <div class="project-card compact-card">
         {{ if .Params.image }}
-        <div class="project-image">
+        <div class="project-image compact-image">
             <img src="{{ .Params.image }}" alt="{{ .Title }}" loading="lazy" />
         </div>
         {{ end }}
-        <div class="project-body">
+        <div class="project-body compact-body">
             <h3>{{ .Title }}</h3>
             <p>{{ .Params.description | default .Summary }}</p>
-            {{ if .Params.link }}
-            <a href="{{ .Params.link }}" class="project-link" target="_blank">{{ if (strings.HasSuffix .Params.link ".pdf") }}View Poster (PDF){{ else }}View on GitHub →{{ end }}</a>
-            {{ end }}
-            {{ if .Params.github }}
-            <a href="{{ .Params.github }}" class="project-link" target="_blank">GitHub →</a>
-            {{ end }}
+            <div class="project-actions-row">
+              <a href="{{ .RelPermalink }}" class="project-link">View Project</a>
+              {{ if .Params.link }}
+              <a href="{{ .Params.link }}" class="project-link" target="_blank">{{ if (strings.HasSuffix .Params.link ".pdf") }}View Poster{{ else }}View on GitHub{{ end }}</a>
+              {{ end }}
+            </div>
         </div>
     </div>
     {{ end }}
